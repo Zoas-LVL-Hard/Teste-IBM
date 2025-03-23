@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "api.dummyjson",
+      "type": "com.example.dummyjson.config.ApiProperties",
+      "sourceType": "com.example.dummyjson.config.ApiProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "api.dummyjson.url",
+      "type": "java.lang.String",
+      "sourceType": "com.example.dummyjson.config.ApiProperties"
+    }
+  ],
+  "hints": []
+}
