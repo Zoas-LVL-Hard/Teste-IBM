@@ -5,7 +5,6 @@ import com.example.dummyjson.service.ProductService;
 
 import jakarta.validation.constraints.NotNull;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 

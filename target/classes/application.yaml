@@ -2,3 +2,16 @@ server:
   port: 8080
 
 api.dummyjson.url: https://dummyjson.com/products
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+  endpoint:
+    health:
+      show-details: always
+
+  
+    

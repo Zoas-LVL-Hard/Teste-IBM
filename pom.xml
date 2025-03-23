@@ -18,6 +18,7 @@
         <!-- lookup parent from repository -->
     </parent>
 
+    <!-- Alterados versão Java e Compilador Maven-->
     <properties>
         <java.version>17</java.version>
         <maven.compiler.source>3.8.1</maven.compiler.source>
@@ -26,6 +27,7 @@
         <javadoc.doclint>none</javadoc.doclint>
     </properties>
 
+    <!-- Para compatibilidade com o Cloud-->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -52,23 +54,7 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
-        <!-- JUnit 4 -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Mockito -->
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>3.3.3</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Javax -->
+        <!-- Javax alterado para Jakarta -->
         <dependency>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
@@ -76,22 +62,39 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Para validação do bean-->
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
         </dependency>
 
+        <!-- OpenFeign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
             <version>4.2.1</version>
         </dependency>
 
+        <!-- Para validação do yaml (entrada de Properties personalizada)-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!-- SpringBoot Tests-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Actuator para verificar a saúde da aplicação-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
 
 
 
@@ -126,9 +129,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>2.22.0</version>
-                <configuration>
-                    <skipTests>true</skipTests>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -152,30 +152,4 @@
             </plugin>
         </plugins>
     </reporting>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.pitest</groupId>
-                <artifactId>pitest-maven</artifactId>
-                <version>1.9.11</version>
-                <executions>
-                    <execution>
-                        <id>pi-report</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>mutationCoverage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <targetClasses>
-                        <param>com.example.dummyjson.*</param>
-                    </targetClasses>
-                    <targetTests>
-                        <param>com.example.dummyjson.*</param>
-                    </targetTests>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

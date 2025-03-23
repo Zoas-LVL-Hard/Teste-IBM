@@ -1,4 +1,6 @@
-C:\Wakanda\testes\teste05 - IBM\dummyjson-client\code-challenge-migration\src\test\java\com\example\dummyjson\service\ProductServiceTest.java
-C:\Wakanda\testes\teste05 - IBM\dummyjson-client\code-challenge-migration\src\test\java\com\example\dummyjson\dto\ProductTest.java
-C:\Wakanda\testes\teste05 - IBM\dummyjson-client\code-challenge-migration\src\test\java\com\example\dummyjson\controller\ProductControllerTest.java
-C:\Wakanda\testes\teste05 - IBM\dummyjson-client\code-challenge-migration\src\test\java\com\example\dummyjson\config\RestTemplateConfigTest.java
+C:\Wakanda\testes\teste05 - IBM\dummyjson-client\code-challenge-migration\src\test\java\com\example\dummyjson\controller\ProductControllerIntegrationTest.java
+C:\Wakanda\testes\teste05 - IBM\dummyjson-client\code-challenge-migration\src\test\java\com\example\dummyjson\dto\ProductIntegrationTest.java
+C:\Wakanda\testes\teste05 - IBM\dummyjson-client\code-challenge-migration\src\test\java\com\example\dummyjson\dto\ProductResponseIntegrationTest.java
+C:\Wakanda\testes\teste05 - IBM\dummyjson-client\code-challenge-migration\src\test\java\com\example\dummyjson\config\ApiPropertiesIntegrationTest.java
+C:\Wakanda\testes\teste05 - IBM\dummyjson-client\code-challenge-migration\src\test\java\com\example\dummyjson\service\ProductServiceIntegrationTest.java
+C:\Wakanda\testes\teste05 - IBM\dummyjson-client\code-challenge-migration\src\test\java\com\example\dummyjson\client\ProductClientIntegrationTest.java

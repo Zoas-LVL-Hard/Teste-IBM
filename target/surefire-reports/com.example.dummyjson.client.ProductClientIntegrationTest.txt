@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.dummyjson.client.ProductClientIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.656 s -- in com.example.dummyjson.client.ProductClientIntegrationTest

@@ -1,4 +1,6 @@
-com\example\dummyjson\config\RestTemplateConfigTest.class
-com\example\dummyjson\dto\ProductTest.class
-com\example\dummyjson\service\ProductServiceTest.class
-com\example\dummyjson\controller\ProductControllerTest.class
+com\example\dummyjson\client\ProductClientIntegrationTest.class
+com\example\dummyjson\config\ApiPropertiesIntegrationTest.class
+com\example\dummyjson\controller\ProductControllerIntegrationTest.class
+com\example\dummyjson\dto\ProductResponseIntegrationTest.class
+com\example\dummyjson\dto\ProductIntegrationTest.class
+com\example\dummyjson\service\ProductServiceIntegrationTest.class
