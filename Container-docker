@@ -1,0 +1,30 @@
+## Executar a Aplicação com Docker
+
+1. Construa a imagem Docker:
+
+    ```bash
+    docker build -t dummyjson-client .
+    ```
+
+2. Execute o container Docker:
+
+    ```bash
+    docker run -p 8080:8080 dummyjson-client
+    ```
+
+3. Acesse o serviço:
+
+    O serviço estará disponível em `http://localhost:8080`.
+
+## Executar a Aplicação com Docker Compose
+
+1. Construa e execute os containers Docker:
+
+    ```bash
+    docker-compose build
+    docker-compose up
+    ```
+
+2. Acesse o serviço:
+
+    O serviço estará disponível em `http://localhost:8080`.
